@@ -1,0 +1,68 @@
+:root{
+    --unit: min(1vh, 1vw);
+
+}
+/*
+ license: Freeware, commercial use requires donation
+link: https://www.fontspace.com/zai-remington-deluxe-typewriter-font-f56606 
+*/
+@font-face {
+    font-family: "typewriter";
+    src: url(../assets/ZaiRemingtonDeluxeTypewriter-axMza.ttf);
+}
+
+body{
+    font-family: "typewriter";
+    font-size: calc(var(--unit)*2.5);
+}
+
+*{
+    border: 1px dotted black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.half-width{
+    width: 50%;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+
+.white-note{
+    height: calc(var(--unit)*30);
+    width: calc(var(--unit)*30);
+    background-image: linear-gradient( to top right, white, white, white, white, rgb(151, 151, 151));
+    box-shadow: calc(var(--unit)) calc(var(--unit)) calc(var(--unit)) rgba(0, 0, 0, 0.282);
+    transform: rotateZ(5deg);
+    margin: calc(var(--unit));
+    padding: calc(var(--unit));
+    overflow: auto;
+    font-size: calc(var(--unit)*2.5);
+}
+
+.note-title{
+    font-size: calc(var(--unit)*2.5);
+}
+.note-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deleting{
+    transition: all 1s ease-in-out;
+    transform: scale(0.1);
+}
+
+.hide-me{
+    display: none;
+}
